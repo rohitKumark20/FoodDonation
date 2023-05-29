@@ -1,8 +1,9 @@
-import {Routes,Route,BrowserRouter} from 'react-router-dom'
-
-import Login from './components/Login'
-import Register from './components/Register'
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Login from './components/Login';
+import Register from './components/Register';
 import Home from './components/Home';
+import AboutUs from './components/AboutUs';
+import NotFound from "./components/NotFound";
 
 import './App.css';
 
@@ -11,12 +12,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element = {<Home/>}></Route>
-          <Route exact path="/login" element = {<Login/>}></Route>
-          <Route exact path="/register" element = {<Register/>}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="*" element={<NotFound />} /> {/* Add this catch-all route */}
         </Routes>
       </BrowserRouter>
-
     </div>
   );
 }
