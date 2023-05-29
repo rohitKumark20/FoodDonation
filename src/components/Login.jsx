@@ -29,16 +29,16 @@ const Login = () => {
 
                     <div className={LoginCSS.credentials}>
                         <div className={LoginCSS.email}>
-                            <h4>E-mail</h4>
                             <div>
-                                <input type="text" placeholder='hello@example.com' />
+                                <label htmlFor="email">Email</label>
+                                <input type="text" id='email' placeholder='hello@example.com' />
                             </div>
                         </div>
 
                         <div className={LoginCSS.password}>
-                            <h4>Password</h4>
                             <div>
-                                <input type="password" placeholder='Enter your Password here' />
+                                <label htmlFor="pass">Password</label>
+                                <input type="password" id='pass' placeholder='Enter your Password here' />
 
                             </div>
                         </div>

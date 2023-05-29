@@ -6,14 +6,14 @@ const Navbar = () => {
     return (
         <nav className={navCSS.navbar}>
             <div className={navCSS.navWrapper}>
-                <div className="left">logo</div>
+                <div className="left"> <a href="/">Food Donation</a> </div>
                 <div className={navCSS.navlist}>
                     <ul>
                         <Link to='/'><li>Home</li></Link>
-                        <Link to='/'><li><a href="/">Donors</a></li></Link>
-                        <Link to='/'><li>Beneficiary</li></Link>
-                        <Link to='/'><li>About Us</li></Link>
-                        <Link to='/'><li>Contact</li></Link>
+                        <Link to='/donations'><li>Donors</li></Link>
+                        <Link to='/request'><li>Beneficiary</li></Link>
+                        <Link to='/about'><li>About Us</li></Link>
+                        <Link to='/contact'><li>Contact</li></Link>
                     </ul>
                 </div>
 

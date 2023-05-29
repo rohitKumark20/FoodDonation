@@ -1,5 +1,6 @@
 .navbar{
     user-select: none;
+    box-shadow: 0 2px 25px 0 rgba(54,66,117,0.12);
 }
 .navWrapper{
     display: flex;

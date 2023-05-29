@@ -1,0 +1,11 @@
+.head h1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+}
+
+.head{
+    text-align: center;
+}
